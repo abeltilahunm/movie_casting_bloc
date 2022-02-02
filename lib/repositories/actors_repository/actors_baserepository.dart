@@ -1,0 +1,14 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:movie_casting_bloc/model/actors_model.dart';
+
+abstract class ActorsBaseRepository {
+  Stream<QuerySnapshot> getAllActors();
+
+  Future<void> addActors(Actor actor);
+
+  Future<void> addActorsToRoaster(Actor actor);
+
+  Future<void> removeActorsFromRoster(Actor actor);
+
+  Stream<QuerySnapshot> getActorsFromRoster();
+}
