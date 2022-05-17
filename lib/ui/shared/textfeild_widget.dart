@@ -15,7 +15,6 @@ class InputTextField extends TextField {
             decoration: InputDecoration(
               hintText: hint,
               errorText: hasError ? errorText : "",
-
               border: const OutlineInputBorder().copyWith(
                 borderSide:
                     const BorderSide(color: Colors.greenAccent, width: 5.0),

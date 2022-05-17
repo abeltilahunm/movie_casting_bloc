@@ -32,6 +32,7 @@ class ActorsRepository extends ActorsBaseRepository {
 
   @override
   Stream<QuerySnapshot> getActorsFromRoster() {
+
     return _fire
         .collection('roster')
         .doc(userId)
